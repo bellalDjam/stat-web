@@ -1,0 +1,100 @@
+html {
+    --lcm-environment-development-background-color: #00A3E2;
+    --lcm-environment-quality-background-color: #8B6BC0;
+    --lcm-environment-preproduction-background-color: #FFB200;
+    --lcm-environment-production-background-color: #4EA553;
+}
+
+[part="drawer"] {
+    border-right: none !important;
+}
+
+[content],
+[part="drawer"] {
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+[part='navbar'], [part='drawer'] {
+    background-color: inherit;
+}
+
+#app-header {
+    --iron-icon-height: var(--lumo-font-size-m);
+    --iron-icon-width: var(--lumo-font-size-m);
+    z-index: 1;
+    height: var(--lcm-header-height);
+    display: flex;
+    box-shadow: var(--lcm-box-shadow);
+    color: #fff;
+    font-size: var(--lumo-font-size-s);
+    font-weight: 500;
+    width: 100%;
+}
+
+#app-header h1 {
+    margin: 0;
+    color: #fff;
+}
+
+#app-header vaadin-drawer-toggle {
+    color: #fff;
+}
+
+#app-footer {
+    color: var(--lumo-secondary-text-color);
+    width: 100%;
+    padding: var(--lumo-space-s);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#app-footer-env {
+    font-size: var(--lumo-font-size-s);
+    font-weight: 500;
+    padding: 2px 4px;
+    color: #fff;
+    border-radius: 4px;
+}
+
+#app-menu {
+    background-color: #fff;
+    border: var(--lcm-border);
+    border-radius: var(--lcm-border-radius);
+}
+
+#nlButton,
+#frButton {
+    --lumo-border-radius: var(--lumo-border-radius-l);
+    background-color: #fff;
+    color: #4EA553;
+}
+#nlButton {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+#frButton {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+#nlButton.active,
+#frButton.active {
+    color: #fff;
+    background-color: #4EA553;
+}
+
+.env-development {
+    background: var(--lcm-environment-development-background-color);
+}
+.env-quality {
+    background: var(--lcm-environment-quality-background-color);
+}
+.env-preproduction {
+    background-color: var(--lcm-environment-preproduction-background-color);
+}
+.env-production {
+    background-color: var(--lcm-environment-production-background-color);
+}

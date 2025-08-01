@@ -1,0 +1,11 @@
+tfoot tr:first-child {
+    display: none;
+}
+
+tfoot tr:nth-child(2):has(td:nth-child(2)) td:first-child {
+    display: none;
+}
+
+th {
+    min-height: var(--lumo-size-m) !important;
+}

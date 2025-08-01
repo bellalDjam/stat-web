@@ -1,0 +1,14 @@
+package com.minagri.stats.core.java;
+
+public enum PublicHoliday {
+	NEW_YEAR,
+	EASTER_MONDAY,
+	LABOUR_DAY,
+	ASCENSION,
+	PENTECOST_MONDAY,
+	NATIONAL_DAY,
+	ASSUMPTION,
+	ALL_SAINTS_DAY,
+	ARMISTICE,
+	CHRISTMAS
+}
